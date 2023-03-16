@@ -4,17 +4,15 @@ These are Python/js/php library's for retrieving air quality data from the AirNo
 
 # example usage:
 
+<?php
+include 'aqi.php';
 
+// Call the get_aqi_data function with a location and API key
+$data = get_aqi_data('40222', 'KY', 'your_api_key');
 
-# <?php
-# include 'aqi.php';
-# 
-# // Call the get_aqi_data function with a location and API key
-# $data = get_aqi_data('40222', 'KY', 'your_api_key');
-#
-# // Print the AQI data
-# echo $data;
-# ?> 
+// Print the AQI data
+echo $data;
+?>
 
 --------------
 
@@ -30,7 +28,5 @@ api_key = "your_api_key_here"
 aqi_data = get_aqi_data(location, state, api_key)
 print(aqi_data)
 
-
-
 # License
-this is licensed under the GNU 3 License. See the LICENSE file for more information.
+this is licensed under the GNU 3 License. See the LICENSE file for more information
