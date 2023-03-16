@@ -1,22 +1,22 @@
 # AirNowAQILibrary
-This is a Python/js/php library for retrieving air quality data from the AirNow API.
+These are Python/js/php library's for retrieving air quality data from the AirNow API.
 
 
 # example usage:
 
-,,,
 
-<?php
-include 'aqi.php';
 
-// Call the get_aqi_data function with a location and API key
-$data = get_aqi_data('40222', 'KY', 'your_api_key');
+# <?php
+# include 'aqi.php';
+# 
+# // Call the get_aqi_data function with a location and API key
+# $data = get_aqi_data('40222', 'KY', 'your_api_key');
+#
+# // Print the AQI data
+# echo $data;
+# ?> 
 
-// Print the AQI data
-echo $data;
-?> 
-,,,
-------------
+--------------
 
 getAQIData("40222", "KY", "your-api-key-here").then(console.log).catch(console.error);
 
