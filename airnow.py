@@ -1,5 +1,6 @@
 import requests
 import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DefusedET
 
 def get_aqi_data(api_key, location, state, country="USA", distance=25):
     try:
@@ -31,7 +32,7 @@ def get_aqi_data(api_key, location, state, country="USA", distance=25):
 
         # Parse the XML response
         try:
-            root = ET.fromstring(response.text)
+            root = DefusedET.fromstring(response.text)
         except ET.ParseError as e:
             raise ValueError(f"Failed to parse the XML response: {e}")
 
